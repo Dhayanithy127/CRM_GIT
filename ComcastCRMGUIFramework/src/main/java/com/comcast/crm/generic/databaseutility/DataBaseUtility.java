@@ -13,7 +13,7 @@ public class DataBaseUtility {
 
 	public void getConnection(String url, String username, String password) throws SQLException {
 		try {
-			Driver d = new Driver();
+			Driver d=new Driver();
 			DriverManager.registerDriver(d);
 			con = DriverManager.getConnection(url, username, password);
 		} catch (Exception e) {
